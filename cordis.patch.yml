@@ -1,0 +1,9 @@
+# dsh-qwen-balance-pet 的 bundle patch —— 把本插件挂进 DSH 配置树。
+#
+# 只做一件事：insert 一行插件 entry。宿主侧入口是 src/index.js，
+# 它会在运行时等待 dsh-pet 的 petApi7340 服务出现，然后注册余额 provider。
+#
+# 注意：id 必须与 package.json 的 name 一致，且该行**不能写行尾注释**。
+- insert:
+    - id: dsh-qwen-balance-pet
+      name: 'dsh-qwen-balance-pet'

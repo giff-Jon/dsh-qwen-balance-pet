@@ -1,0 +1,55 @@
+{
+  "name": "dsh-qwen-balance-pet",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "让 dsh-pet 桌宠气泡显示阿里云百炼（千问）的代金券余额：走 BSS OpenAPI QueryCashCoupons / QueryAccountBalance，注册成 dsh-pet 的第三方余额 provider。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-pet",
+    "qwen",
+    "bailian",
+    "dashscope",
+    "aliyun",
+    "balance",
+    "coupon"
+  ],
+  "homepage": "https://github.com/PC2005-cloud/dsh-qwen-balance-pet#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PC2005-cloud/dsh-qwen-balance-pet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PC2005-cloud/dsh-qwen-balance-pet/issues"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./src/*": "./src/*",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "install.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "install-plugin": "node install.mjs",
+    "preflight": "node test/preflight.profile.mjs",
+    "verify:ak": "node test/verify.ak.mjs"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
