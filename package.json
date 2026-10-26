@@ -15,13 +15,13 @@
     "balance",
     "coupon"
   ],
-  "homepage": "https://github.com/PC2005-cloud/dsh-qwen-balance-pet#readme",
+  "homepage": "https://github.com/giff-Jon/dsh-qwen-balance-pet#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PC2005-cloud/dsh-qwen-balance-pet.git"
+    "url": "git+https://github.com/giff-Jon/dsh-qwen-balance-pet.git"
   },
   "bugs": {
-    "url": "https://github.com/PC2005-cloud/dsh-qwen-balance-pet/issues"
+    "url": "https://github.com/giff-Jon/dsh-qwen-balance-pet/issues"
   },
   "main": "src/index.js",
   "exports": {
